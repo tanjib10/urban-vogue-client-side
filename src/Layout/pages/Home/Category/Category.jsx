@@ -9,13 +9,13 @@ import slide8 from "../../../../assets/product_25.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import SectionTitle from "../../../../components/SectionTitle/SectionTitle";
 
 const Category = () => {
   return (
-    <>
-      <SectionTitle heading={"Order Now"}></SectionTitle>
+    <div className="mb-10">
+      <SectionTitle heading="Categories"></SectionTitle>
       <Swiper
         slidesPerView={"auto"}
         spaceBetween={30}
@@ -24,11 +24,8 @@ const Category = () => {
           delay: 2000,
           disableOnInteraction: false,
         }}
-        pagination={{
-          clickable: true,
-        }}
         //   navigation={true}
-        modules={[Autoplay, Pagination]}
+        modules={[Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide className="max-w-screen-sm mx-auto">
@@ -56,7 +53,7 @@ const Category = () => {
           <img className="ml-10 lg:ml-0" src={slide8} alt="" />
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 };
 
