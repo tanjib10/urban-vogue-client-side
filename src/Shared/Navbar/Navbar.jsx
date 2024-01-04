@@ -13,7 +13,7 @@ const Navbar = () => {
   );
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="max-w-screen-xl navbar fixed z-10 bg-opacity-40 bg-black text-white">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -40,8 +40,8 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="flex justify-center items-center">
-            <img className="w-16 mr-2" src={logo} alt="" />
-            <a className="text-xl font-bold">Urban Vogue</a>
+            <img className="w-10 lg:w-16 mr-0 lg:mr-2" src={logo} alt="" />
+            <a className="text-lg lg:text-xl font-bold">Urban Vogue</a>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
