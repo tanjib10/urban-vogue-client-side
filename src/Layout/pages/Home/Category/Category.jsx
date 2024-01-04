@@ -10,10 +10,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
+import SectionTitle from "../../../../components/SectionTitle/SectionTitle";
 
 const Category = () => {
   return (
-    <div>
+    <>
+      <SectionTitle heading={"Order Now"}></SectionTitle>
       <Swiper
         slidesPerView={"auto"}
         spaceBetween={30}
@@ -54,7 +56,7 @@ const Category = () => {
           <img className="ml-10 lg:ml-0" src={slide8} alt="" />
         </SwiperSlide>
       </Swiper>
-    </div>
+    </>
   );
 };
 

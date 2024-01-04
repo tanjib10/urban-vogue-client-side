@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
 const SectionTitle = ({ heading, subHeading }) => {
   return (
-    <div>
+    <div className="text-center">
       <p>{subHeading}</p>
-      <h3>{heading}</h3>
+      <h3 className="border-y-4 text-xl lg:text-3xl font-bold py-4 mb-10 w-3/12 mx-auto">
+        {heading}
+      </h3>
     </div>
   );
 };
