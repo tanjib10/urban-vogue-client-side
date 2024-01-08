@@ -48,7 +48,7 @@ const Navbar = () => {
           <ul className="menu-horizontal space-x-4">{navLinks}</ul>
         </div>
         <div className="navbar-end">
-          <Link className="btn bg-red-700 text-white">Sign in</Link>
+          <Link className="btn bg-red-700 text-white">Sign up</Link>
         </div>
       </div>
     </div>
