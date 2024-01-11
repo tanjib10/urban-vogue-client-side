@@ -1,8 +1,10 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo_big.png";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../components/AuthProvider/AuthProvider";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { user } = useContext(AuthContext);
   const navLinks = (
     <>
       <li>
@@ -54,13 +56,13 @@ const Navbar = () => {
             onClick={() => setIsOpen(!isOpen)}
             className="p-4 md:py-1 md:px-2 border-[1px] border-neutral-200 flex flex-row items-center gap-3 rounded-full cursor-pointer hover:shadow-md transition"
           >
-            <AiOutlineMenu />
+            {/* <AiOutlineMenu /> */}
             <div className="hidden md:block">
               {/* Avatar */}
               <img
                 className="rounded-full"
                 referrerPolicy="no-referrer"
-                src={user && user.photoURL ? user.photoURL : avatarImg}
+                src={user && user.photoURL ? user.photoURL : ""}
                 alt="profile"
                 height="30"
                 width="30"
