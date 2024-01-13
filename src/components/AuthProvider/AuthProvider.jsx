@@ -7,7 +7,7 @@ import {
   signInWithEmailAndPassword,
   signOut,
 } from "firebase/auth";
-import app from "../../../Firebase/firebase.config";
+import app from "../../firebase/firebase.config";
 import useAxiosPublic from "../../../hooks/useAxiosPublic";
 export const AuthContext = createContext({});
 const auth = getAuth(app);

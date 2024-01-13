@@ -1,3 +1,4 @@
+import { AiOutlineMenu } from "react-icons/ai";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo_big.png";
 import { useContext, useState } from "react";
@@ -56,7 +57,7 @@ const Navbar = () => {
             onClick={() => setIsOpen(!isOpen)}
             className="p-4 md:py-1 md:px-2 border-[1px] border-neutral-200 flex flex-row items-center gap-3 rounded-full cursor-pointer hover:shadow-md transition"
           >
-            {/* <AiOutlineMenu /> */}
+            <AiOutlineMenu />
             <div className="hidden md:block">
               {/* Avatar */}
               <img
