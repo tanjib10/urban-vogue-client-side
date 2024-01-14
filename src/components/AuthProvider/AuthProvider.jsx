@@ -8,7 +8,7 @@ import {
   signOut,
 } from "firebase/auth";
 import app from "../../firebase/firebase.config";
-import useAxiosPublic from "../../../hooks/useAxiosPublic";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 export const AuthContext = createContext({});
 const auth = getAuth(app);
 // const provider = new GoogleAuthProvider();
